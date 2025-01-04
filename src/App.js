@@ -1,7 +1,7 @@
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Menu from './components/shareds/Menu';
-
+import { BrowserRouter, Routes } from 'react-router-dom';
+import Menu from './components/shareds/Menu'; 
+import Footer from './components/shareds/Footer';
 function App() {
   return (
     <div className="App">
@@ -14,7 +14,8 @@ function App() {
         </Routes>
   
       </BrowserRouter>
-
+        <Footer />
+      <BrowserRouter/>
 
     </div>
   );
