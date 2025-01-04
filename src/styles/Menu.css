@@ -1,0 +1,41 @@
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #282c34;
+    padding: 0 20px;
+    border: 2px solid #ffffff;
+}
+
+
+.botones-menu {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    margin-bottom: 30px;  /* margen inferior debido a que veia muy abajo el menu */
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li {
+        text-align: right;
+        display: inline;
+        margin-left: 15px;
+        font-size: 18px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+
+.logo-my-school {
+    width: 200px;
+    height: 200px;
+}
