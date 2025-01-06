@@ -22,17 +22,15 @@ function Menu() {
         </Link>
       </div>
 
-    
-    
-   
-
       <div className="botones-menu">
-        <a href="https://github.com/Niko-NkDev"
+        <a
+          href="https://github.com/Niko-NkDev"
           target="_blank"
           rel="noopener noreferrer"
-          >
-      <FaGithub size={30} color="black" />
-      </a>
+        >
+          <FaGithub size={30} color="black" />
+        </a>
+        
         <nav>
           <ul className="menu">
             <li>
