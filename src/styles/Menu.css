@@ -1,16 +1,28 @@
 .menu-container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #282c34;
+    background-color: transparent;
     padding: 0 20px;
-    border: 2px solid #ffffff;
 }
+
+.menu-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 60%; 
+    height: 4px; 
+    background: linear-gradient(to right, transparent, #ff5733, transparent); 
+  }
+
 
 
 .botones-menu {
     display: flex;
-    gap: 10px;
+    gap: 35px;
     text-align: center;
     justify-content: flex-end;
     padding: 0 20px;
@@ -20,12 +32,10 @@
         list-style: none;
         margin: 0;
         padding: 0;
+        gap: 35px;
     }
 
     ul li {
-        text-align: right;
-        display: inline;
-        margin-left: 15px;
         font-size: 18px;
     }
 
@@ -35,7 +45,52 @@
     }
 }
 
+
 .logo-my-school {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 4px solid #ffffff;
+    border-radius: 100px;
 }
+
+.hamburger-button {
+    background-color: #010080;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: bebas-neue, Arial, sans-serif;    
+  }
+
+.menu {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+
+    li {
+        position: relative;
+    }
+  }
+
+  .submenu {
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 85px;
+    text-align: center;
+    align-items: center;
+  }
+
+
+ 
